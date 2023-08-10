@@ -1,0 +1,1719 @@
+<!DOCTYPE html>
+<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
+<!-- Last Published: August 10, 2023 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.047268c6dd09ad74ba54a0ba71837064.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.042e26407c9e383d96a1f26d6787c686.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Tamás Nagy, Ph.D." />
+
+
+
+
+
+  
+
+<meta name="description" content="Goa or psytrance music has several subgenres and some of them are difficult to tell apart. I wanted to build a classifier to predict genres based on music features. First, I need an expert opinion to use for supervised classification." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://example.com/post/psytrance-genre-classifier/" />
+<link rel="canonical" href="https://example.com/post/psytrance-genre-classifier/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary_large_image" />
+
+  <meta property="twitter:site" content="@wowchemy" />
+  <meta property="twitter:creator" content="@wowchemy" />
+<meta property="twitter:image" content="https://example.com/post/psytrance-genre-classifier/featured.png" />
+<meta property="og:site_name" content="Academic" />
+<meta property="og:url" content="https://example.com/post/psytrance-genre-classifier/" />
+<meta property="og:title" content="Psytrance genre classifier | Academic" />
+<meta property="og:description" content="Goa or psytrance music has several subgenres and some of them are difficult to tell apart. I wanted to build a classifier to predict genres based on music features. First, I need an expert opinion to use for supervised classification." /><meta property="og:image" content="https://example.com/post/psytrance-genre-classifier/featured.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2020-10-24T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2020-10-24T00:00:00&#43;00:00">
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://example.com/post/psytrance-genre-classifier/"
+  },
+  "headline": "Psytrance genre classifier",
+  
+  "image": [
+    "https://example.com/post/psytrance-genre-classifier/featured.png"
+  ],
+  
+  "datePublished": "2020-10-24T00:00:00Z",
+  "dateModified": "2020-10-24T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Tamás Nagy, Ph.D."
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Academic",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Goa or psytrance music has several subgenres and some of them are difficult to tell apart. I wanted to build a classifier to predict genres based on music features. First, I need an expert opinion to use for supervised classification."
+}
+</script>
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Psytrance genre classifier | Academic</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="1f1dec247047a6a1d32e17b211eef351" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.ec9d49ca50e4b80bdb08f0417a28ed84.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Academic</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Academic</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#posts"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#talks"><span>Talks</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#featured"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+            
+            <li class="nav-item d-none d-lg-inline-flex">
+              <a class="nav-link" href="https://twitter.com/nagyt" data-toggle="tooltip" data-placement="bottom" title="Follow me on Twitter" target="_blank" rel="noopener" aria-label="Follow me on Twitter">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="article-container pt-3">
+  <h1>Psytrance genre classifier</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Oct 24, 2020
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    7 min read
+  </span>
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 514px;">
+  <div style="position: relative">
+    <img src="/post/psytrance-genre-classifier/featured_hu5d774be53f8b7ab05ceb3d2c6e5177e8_124161_720x2500_fit_q75_h2_lanczos_3.webp" width="720" height="514" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>Goa or psytrance music has several subgenres and some of them are difficult to tell apart. I wanted to build a classifier to predict genres based on music features. First, I need an expert opinion to use for supervised classification. For that, I&rsquo;ll use the absolutely fantastic <a href="http://psytranceguide.com/" target="_blank" rel="noopener">http://psytranceguide.com/</a> (Made by @DanielLesden) that lists 20 psytrance genres and fortunately, also has example playlists that can be scraped and analyzed.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="https://media.giphy.com/media/CnGbCjxI68A8w/giphy.gif" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h2 id="highlights">Highlights</h2>
+<ul>
+<li>
+<p>Webscraping using rvest</p>
+</li>
+<li>
+<p>Using the spotifyr package to get music features</p>
+</li>
+<li>
+<p>Exploring the music features</p>
+</li>
+<li>
+<p>Building a random forest classifier on bootstrap resamples using tidymodels</p>
+</li>
+<li>
+<p>Estimating the importance of each feature using the vip package</p>
+</li>
+<li>
+<p>Creating a network of subgenres from the confusion matrix</p>
+</li>
+<li>
+<p>Misc: using tidyverse for data wrangling, rectangling, and visualization.</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="c1"># Load packages</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">rvest</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">spotifyr</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">tidytext</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">tidymodels</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">vip</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">igraph</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">ggraph</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Default ggplot theme</span>
+</span></span><span class="line"><span class="cl"><span class="nf">theme_set</span><span class="p">(</span><span class="nf">theme_light</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Setup parallel procesing</span>
+</span></span><span class="line"><span class="cl"><span class="n">doParallel</span><span class="o">::</span><span class="nf">registerDoParallel</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Authenticate the spotify API through spotifyr.</span>
+</span></span><span class="line"><span class="cl"><span class="n">spotify_id</span> <span class="o">&lt;-</span> <span class="nf">read_csv</span><span class="p">(</span><span class="n">here</span><span class="o">::</span><span class="nf">here</span><span class="p">(</span><span class="s">&#34;assets/spotify_client_id.txt&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">Sys.setenv</span><span class="p">(</span><span class="n">SPOTIFY_CLIENT_ID</span> <span class="o">=</span> <span class="n">spotify_id</span><span class="o">$</span><span class="n">client_id</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">Sys.setenv</span><span class="p">(</span><span class="n">SPOTIFY_CLIENT_SECRET</span> <span class="o">=</span> <span class="n">spotify_id</span><span class="o">$</span><span class="n">secret</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">access_token</span> <span class="o">&lt;-</span> <span class="nf">get_spotify_access_token</span><span class="p">()</span>
+</span></span></code></pre></div><h2 id="create-the-dataset">Create the dataset</h2>
+<p>The first task is to scrape the data that we can use for machine learning. Get data from <a href="http://psytranceguide.com/" target="_blank" rel="noopener">http://psytranceguide.com/</a> . There are genres here with examples, and what is more, links lead to spotify playlists. The spotifyr package makes it possible to retrieve track features for each playlist that we can use for classification.</p>
+<p>Create a dataset that contains genre data and track features.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="c1"># Scrape the homepage.</span>
+</span></span><span class="line"><span class="cl"><span class="n">psytrance_link</span> <span class="o">&lt;-</span> <span class="s">&#34;http://psytranceguide.com/&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">psytrance_page</span> <span class="o">&lt;-</span> <span class="nf">read_html</span><span class="p">(</span><span class="n">psytrance_link</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Get the urls and other data from the psytrance guide</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># I used the selectorGadget to find the proper css tags</span>
+</span></span><span class="line"><span class="cl"><span class="n">goa_data</span> <span class="o">&lt;-</span> 
+</span></span><span class="line"><span class="cl">  <span class="n">psytrance_page</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">html_nodes</span><span class="p">(</span><span class="s">&#34;h2 a , .jouele-info-control-text&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Create a table for all data (genres + playlist links)</span>
+</span></span><span class="line"><span class="cl"><span class="n">goa_genres</span> <span class="o">&lt;-</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">tibble</span><span class="p">(</span><span class="n">genre</span> <span class="o">=</span> <span class="nf">map_chr</span><span class="p">(</span><span class="n">goa_data</span><span class="p">,</span> <span class="n">html_text</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">         <span class="n">playlist_url</span> <span class="o">=</span> <span class="nf">html_attr</span><span class="p">(</span><span class="n">goa_data</span><span class="p">,</span> <span class="s">&#34;href&#34;</span><span class="p">))</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">extract</span><span class="p">(</span><span class="n">playlist_url</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">          <span class="n">into</span> <span class="o">=</span> <span class="s">&#34;playlist_id&#34;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">          <span class="n">regex</span> <span class="o">=</span> <span class="s">&#34;.*playlist/(.*)\\?si.*&#34;</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Get all music features for all tracks for each playlist</span>
+</span></span><span class="line"><span class="cl"><span class="n">features</span> <span class="o">&lt;-</span> <span class="nf">map_dfr</span><span class="p">(</span><span class="n">goa_genres</span><span class="o">$</span><span class="n">playlist_id</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">                    <span class="o">~</span><span class="nf">get_playlist_audio_features</span><span class="p">(</span><span class="n">playlist_uris</span> <span class="o">=</span> <span class="n">.x</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Put playlist information and features together</span>
+</span></span><span class="line"><span class="cl"><span class="n">goa</span> <span class="o">&lt;-</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">left_join</span><span class="p">(</span><span class="n">goa_genres</span><span class="p">,</span> <span class="n">features</span><span class="p">,</span> <span class="n">by</span> <span class="o">=</span> <span class="s">&#34;playlist_id&#34;</span><span class="p">)</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">hoist</span><span class="p">(</span><span class="n">track.album.artists</span><span class="p">,</span> <span class="s">&#34;name&#34;</span><span class="p">,</span> <span class="n">.remove</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">select</span><span class="p">(</span><span class="n">genre</span><span class="o">:</span><span class="n">playlist_name</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">         <span class="n">track_id</span> <span class="o">=</span> <span class="n">track.id</span><span class="p">,</span> <span class="n">track_name</span> <span class="o">=</span> <span class="n">track.name</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">         <span class="n">artist_names</span> <span class="o">=</span> <span class="n">name</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">         <span class="n">danceability</span><span class="o">:</span><span class="n">tempo</span><span class="p">)</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">rowwise</span><span class="p">()</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">mutate</span><span class="p">(</span><span class="n">artist_names</span> <span class="o">=</span> <span class="nf">str_c</span><span class="p">(</span><span class="n">artist_names</span><span class="p">,</span> <span class="n">collapse</span> <span class="o">=</span> <span class="s">&#34;, &#34;</span><span class="p">))</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">ungroup</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Write data </span>
+</span></span><span class="line"><span class="cl"><span class="nf">write_csv</span><span class="p">(</span><span class="n">goa</span><span class="p">,</span> <span class="n">here</span><span class="o">::</span><span class="nf">here</span><span class="p">(</span><span class="s">&#34;data/goa_tracks.csv&#34;</span><span class="p">))</span>
+</span></span></code></pre></div><h2 id="explore-goa-data">Explore goa data</h2>
+<p>First let&rsquo;s see if there is enough variability in the features. I&rsquo;m using a trick to calculate confidence intervals for the means by using a one-sample t.test with 0 as reference (could be any number as we are not interested in the p value).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="c1"># Use the saved dataset so we don&#39;t have to reassemle the data.</span>
+</span></span><span class="line"><span class="cl"><span class="n">goa</span> <span class="o">&lt;-</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">read_csv</span><span class="p">(</span><span class="n">here</span><span class="o">::</span><span class="nf">here</span><span class="p">(</span><span class="s">&#34;data/goa_tracks.csv&#34;</span><span class="p">))</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">select</span><span class="p">(</span><span class="n">genre</span><span class="p">,</span> <span class="n">track_name</span><span class="p">,</span> <span class="n">danceability</span><span class="o">:</span><span class="n">tempo</span><span class="p">)</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">mutate</span><span class="p">(</span><span class="n">genre</span> <span class="o">=</span> <span class="nf">factor</span><span class="p">(</span><span class="n">genre</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Balance the data by sampling exactly 10 tracks from each genre</span>
+</span></span><span class="line"><span class="cl"><span class="nf">set.seed</span><span class="p">(</span><span class="m">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">goa</span> <span class="o">&lt;-</span>
+</span></span><span class="line"><span class="cl">  <span class="n">goa</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">group_by</span><span class="p">(</span><span class="n">genre</span><span class="p">)</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">sample_n</span><span class="p">(</span><span class="m">10</span><span class="p">)</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">ungroup</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Put data into long format, calculate confidence intervals</span>
+</span></span><span class="line"><span class="cl"><span class="n">goa_long</span> <span class="o">&lt;-</span> 
+</span></span><span class="line"><span class="cl">  <span class="n">goa</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">pivot_longer</span><span class="p">(</span><span class="n">danceability</span><span class="o">:</span><span class="n">tempo</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">               <span class="n">names_to</span> <span class="o">=</span> <span class="s">&#34;feature&#34;</span><span class="p">)</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">group_nest</span><span class="p">(</span><span class="n">genre</span><span class="p">,</span> <span class="n">feature</span><span class="p">)</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">mutate</span><span class="p">(</span><span class="n">t_test</span> <span class="o">=</span> <span class="nf">map</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">                      <span class="o">~</span><span class="nf">t.test</span><span class="p">(</span><span class="n">.x</span><span class="o">$</span><span class="n">value</span><span class="p">)</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">                      <span class="nf">tidy</span><span class="p">()))</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">unnest</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="n">t_test</span><span class="p">,</span> <span class="n">data</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="c1"># Distributions</span>
+</span></span><span class="line"><span class="cl"><span class="n">goa_long</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">ggplot</span><span class="p">()</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="n">feature</span><span class="p">)</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">geom_histogram</span><span class="p">(</span><span class="n">show.legend</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">facet_wrap</span><span class="p">(</span><span class="o">~</span><span class="n">feature</span><span class="p">,</span> <span class="n">scales</span> <span class="o">=</span> <span class="s">&#34;free&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><img src="https://example.com/post/psytrance-genre-classifier/index_files/figure-html/unnamed-chunk-2-1.png" width="672" />
+<p>Let&rsquo;s order genres by features. Some features seem legit on face validity, although I have some difficulty in telling apart psyctrance genres. Also, I&rsquo;m not fully aware of the meaning of all features.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="n">goa_long</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">mutate</span><span class="p">(</span><span class="n">genre</span> <span class="o">=</span> <span class="nf">reorder_within</span><span class="p">(</span><span class="n">genre</span><span class="p">,</span> <span class="n">estimate</span><span class="p">,</span> <span class="n">feature</span><span class="p">))</span> <span class="o">%&gt;%</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">ggplot</span><span class="p">()</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">estimate</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">genre</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">      <span class="n">xmin</span> <span class="o">=</span> <span class="n">conf.low</span><span class="p">,</span> <span class="n">xmax</span> <span class="o">=</span> <span class="n">conf.high</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="n">color</span> <span class="o">=</span> <span class="n">feature</span><span class="p">)</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">geom_pointrange</span><span class="p">(</span><span class="n">size</span> <span class="o">=</span> <span class="m">0.5</span><span class="p">,</span> <span class="n">show.legend</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">scale_y_reordered</span><span class="p">()</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">facet_wrap</span><span class="p">(</span><span class="o">~</span><span class="n">feature</span><span class="p">,</span> <span class="n">scales</span> <span class="o">=</span> <span class="s">&#34;free&#34;</span><span class="p">)</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">labs</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="s">&#34;Average feature values by genre (95%CI)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">       <span class="n">subtitle</span> <span class="o">=</span> <span class="s">&#34;Several features have high variability across genres that make features plausible to classify genres.&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">       <span class="n">x</span> <span class="o">=</span> <span class="kc">NULL</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="kc">NULL</span><span class="p">)</span>
+</span></span></code></pre></div><img src="https://example.com/post/psytrance-genre-classifier/index_files/figure-html/unnamed-chunk-3-1.png" width="960" />
+<h2 id="classify-goa-subgenres-using-random-forest">Classify goa subgenres using random forest</h2>
+<p>Create a random forest model for finding the defining features for the different subgenres. As we have a very little dataset, we are not splitting it into training and test set, but we use bootstraps to make the model more robust.</p>
+<p>Bootstrap data, specify model and workflow.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="c1"># Create bootstraps</span>
+</span></span><span class="line"><span class="cl"><span class="nf">set.seed</span><span class="p">(</span><span class="m">123</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">goa_boot</span> <span class="o">&lt;-</span> <span class="nf">bootstraps</span><span class="p">(</span><span class="n">goa</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Specify random forest model</span>
+</span></span><span class="line"><span class="cl"><span class="n">rf_spec</span> <span class="o">&lt;-</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">rand_forest</span><span class="p">(</span><span class="n">trees</span> <span class="o">=</span> <span class="m">1000</span><span class="p">)</span> <span class="o">%&gt;%</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">set_mode</span><span class="p">(</span><span class="s">&#34;classification&#34;</span><span class="p">)</span> <span class="o">%&gt;%</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">set_engine</span><span class="p">(</span><span class="s">&#34;ranger&#34;</span><span class="p">,</span> <span class="n">importance</span> <span class="o">=</span> <span class="s">&#34;permutation&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Create workflow</span>
+</span></span><span class="line"><span class="cl"><span class="n">goa_wf</span> <span class="o">&lt;-</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">workflow</span><span class="p">()</span> <span class="o">%&gt;%</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">add_formula</span><span class="p">(</span><span class="n">genre</span> <span class="o">~</span> <span class="n">. </span><span class="o">-</span><span class="n">track_name</span><span class="p">)</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">add_model</span><span class="p">(</span><span class="n">rf_spec</span><span class="p">)</span>
+</span></span></code></pre></div><p>Train model and evaluate. I seems like accuracy is poor, and sensitivity is also not great, that is a characteristic of multiclass classifications (too many categories to choose from). In overall, the model seems to have a 90% ROC AUC.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="n">goa_rs</span> <span class="o">&lt;-</span> 
+</span></span><span class="line"><span class="cl">  <span class="n">goa_wf</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">fit_resamples</span><span class="p">(</span><span class="n">resamples</span> <span class="o">=</span> <span class="n">goa_boot</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">metrics</span> <span class="o">=</span> <span class="nf">metric_set</span><span class="p">(</span><span class="n">roc_auc</span><span class="p">,</span> <span class="n">accuracy</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                                     <span class="n">specificity</span><span class="p">,</span> <span class="n">sensitivity</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">                <span class="n">control</span> <span class="o">=</span> <span class="nf">control_resamples</span><span class="p">(</span><span class="n">verbose</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                                            <span class="n">save_pred</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                                            <span class="n">save_workflow</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">goa_rs</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">collect_metrics</span><span class="p">()</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">## # A tibble: 4 × 6
+</span></span><span class="line"><span class="cl">##   .metric     .estimator  mean     n  std_err .config             
+</span></span><span class="line"><span class="cl">##   &lt;chr&gt;       &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;    &lt;dbl&gt; &lt;chr&gt;               
+</span></span><span class="line"><span class="cl">## 1 accuracy    multiclass 0.280    25 0.0102   Preprocessor1_Model1
+</span></span><span class="line"><span class="cl">## 2 roc_auc     hand_till  0.887    25 0.00222  Preprocessor1_Model1
+</span></span><span class="line"><span class="cl">## 3 sensitivity macro      0.318    25 0.0119   Preprocessor1_Model1
+</span></span><span class="line"><span class="cl">## 4 specificity macro      0.962    25 0.000524 Preprocessor1_Model1
+</span></span></code></pre></div><h2 id="which-goa-genres-are-the-most-difficult-to-classify">Which goa genres are the most difficult to classify?</h2>
+<p>It seems like some styles are more difficult than others to classify. As the individual ROC curve show Goa Trance, Pssybreaks, Psytechno can be easily confused with other styles. In contrast, Chillout, Hi-Tech, and Offbeat are easier to identify.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="n">goa_rs</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">collect_predictions</span><span class="p">()</span> <span class="o">%&gt;%</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">roc_curve</span><span class="p">(</span><span class="n">genre</span><span class="p">,</span> <span class="n">.pred_Chillout</span><span class="o">:</span><span class="n">.pred_Tribal</span><span class="p">)</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">ggplot</span><span class="p">()</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="m">1</span> <span class="o">-</span> <span class="n">specificity</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">sensitivity</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">.level</span><span class="p">)</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">geom_abline</span><span class="p">(</span><span class="n">lty</span> <span class="o">=</span> <span class="m">2</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s">&#34;gray80&#34;</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="m">1</span><span class="p">)</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">geom_path</span><span class="p">(</span><span class="n">show.legend</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span> <span class="n">alpha</span> <span class="o">=</span> <span class="m">0.6</span><span class="p">,</span> <span class="n">size</span> <span class="o">=</span> <span class="m">1.2</span><span class="p">)</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">facet_wrap</span><span class="p">(</span><span class="o">~</span><span class="n">.level</span><span class="p">,</span> <span class="n">ncol</span> <span class="o">=</span> <span class="m">5</span><span class="p">)</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">scale_color_viridis_d</span><span class="p">(</span><span class="n">option</span> <span class="o">=</span> <span class="s">&#34;plasma&#34;</span><span class="p">)</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">scale_x_continuous</span><span class="p">(</span><span class="n">labels</span> <span class="o">=</span> <span class="n">scales</span><span class="o">::</span><span class="nf">percent_format</span><span class="p">())</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">scale_y_continuous</span><span class="p">(</span><span class="n">labels</span> <span class="o">=</span> <span class="n">scales</span><span class="o">::</span><span class="nf">percent_format</span><span class="p">())</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">labs</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="s">&#34;Individual ROC curves for each goa genre.&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">       <span class="n">subtitle</span> <span class="o">=</span> <span class="s">&#34;Some genres are easier to classify than others.&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-mysql" data-lang="mysql"><span class="line"><span class="cl"><span class="c1">## Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
+</span></span></span><span class="line"><span class="cl"><span class="c1">## ℹ Please use `linewidth` instead.
+</span></span></span><span class="line"><span class="cl"><span class="c1">## This warning is displayed once every 8 hours.
+</span></span></span><span class="line"><span class="cl"><span class="c1">## Call `lifecycle::last_lifecycle_warnings()` to see where this warning was
+</span></span></span><span class="line"><span class="cl"><span class="c1">## generated.
+</span></span></span></code></pre></div><img src="https://example.com/post/psytrance-genre-classifier/index_files/figure-html/unnamed-chunk-6-1.png" width="672" />
+<h2 id="importance-of-the-features">Importance of the features</h2>
+<p>We can evaluate the importance of the features. It seems like tempo is by far the most important feature, followed by danceability and energy. Mode is not especially helpful (I&rsquo;m not even sure what it means).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="n">rf_spec</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">set_engine</span><span class="p">(</span><span class="s">&#34;ranger&#34;</span><span class="p">,</span> <span class="n">importance</span> <span class="o">=</span> <span class="s">&#34;permutation&#34;</span><span class="p">)</span> <span class="o">%&gt;%</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">fit</span><span class="p">(</span><span class="n">genre</span> <span class="o">~</span> <span class="n">.,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">goa</span><span class="p">)</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">vip</span><span class="p">(</span><span class="n">geom</span> <span class="o">=</span> <span class="s">&#34;col&#34;</span><span class="p">)</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">aes</span><span class="p">(</span><span class="n">fill</span> <span class="o">=</span> <span class="n">Variable</span><span class="p">)</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">scale_fill_viridis_d</span><span class="p">(</span><span class="n">option</span> <span class="o">=</span> <span class="s">&#34;viridis&#34;</span><span class="p">)</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">labs</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="s">&#34;Variable importance for classification&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><img src="https://example.com/post/psytrance-genre-classifier/index_files/figure-html/unnamed-chunk-7-1.png" width="672" />
+<h2 id="explore-which-genres-are-easier-to-confuse-with-each-other">Explore which genres are easier to confuse with each other</h2>
+<p>Because of the several classes and the small dataset, the confusion matrix shows that there are only a few genres that are correctly classified at least half of the time. It also shows what genres are the easiest to confuse with each other.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="n">goa_confusion</span> <span class="o">&lt;-</span>
+</span></span><span class="line"><span class="cl">  <span class="n">goa_rs</span> <span class="o">%&gt;%</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">collect_predictions</span><span class="p">()</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">conf_mat</span><span class="p">(</span><span class="n">genre</span><span class="p">,</span> <span class="n">.pred_class</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">goa_conf_perc</span> <span class="o">&lt;-</span>
+</span></span><span class="line"><span class="cl">  <span class="n">goa_confusion</span><span class="o">$</span><span class="n">table</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">as_tibble</span><span class="p">()</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">group_by</span><span class="p">(</span><span class="n">Truth</span><span class="p">)</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">mutate</span><span class="p">(</span><span class="n">all</span> <span class="o">=</span> <span class="nf">sum</span><span class="p">(</span><span class="n">n</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">         <span class="n">perc</span> <span class="o">=</span> <span class="n">n</span><span class="o">/</span><span class="n">all</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">goa_conf_perc</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">ggplot</span><span class="p">()</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Truth</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">Prediction</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="n">perc</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">      <span class="n">label</span> <span class="o">=</span> <span class="n">scales</span><span class="o">::</span><span class="nf">percent</span><span class="p">(</span><span class="n">perc</span><span class="p">,</span> <span class="n">accuracy</span> <span class="o">=</span> <span class="m">1</span><span class="p">))</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">geom_tile</span><span class="p">(</span><span class="n">show.legend</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">geom_text</span><span class="p">(</span><span class="n">size</span> <span class="o">=</span> <span class="m">3</span><span class="p">)</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">scale_fill_viridis_c</span><span class="p">(</span><span class="n">option</span> <span class="o">=</span> <span class="s">&#34;plasma&#34;</span><span class="p">)</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">labs</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="s">&#34;Confusion matrix for the random forest model&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">       <span class="n">subtitle</span> <span class="o">=</span> <span class="s">&#34;Percent of correct classifications in the genre&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">       <span class="n">x</span> <span class="o">=</span> <span class="s">&#34;Truth&#34;</span><span class="p">)</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">theme</span><span class="p">(</span><span class="n">axis.text.x</span> <span class="o">=</span> <span class="nf">element_text</span><span class="p">(</span><span class="n">angle</span> <span class="o">=</span> <span class="m">90</span><span class="p">,</span> <span class="n">vjust</span> <span class="o">=</span> <span class="m">0.5</span><span class="p">,</span> <span class="n">hjust</span><span class="o">=</span><span class="m">1</span><span class="p">))</span>
+</span></span></code></pre></div><img src="https://example.com/post/psytrance-genre-classifier/index_files/figure-html/unnamed-chunk-8-1.png" width="672" />
+<p>Let&rsquo;s visualize how easy it is to confuse certain genres with others by building a network graph!</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="n">goa_graph</span> <span class="o">&lt;-</span>
+</span></span><span class="line"><span class="cl">  <span class="n">goa_conf_perc</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">filter</span><span class="p">(</span><span class="n">Prediction</span> <span class="o">!=</span> <span class="n">Truth</span> <span class="o">&amp;</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="m">0</span><span class="p">)</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">select</span><span class="p">(</span><span class="n">Prediction</span><span class="p">,</span> <span class="n">Truth</span><span class="p">,</span> <span class="n">perc</span><span class="p">)</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">graph_from_data_frame</span><span class="p">(</span><span class="n">directed</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">goa_graph</span> <span class="o">%&gt;%</span> 
+</span></span><span class="line"><span class="cl">  <span class="nf">ggraph</span><span class="p">()</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">geom_edge_link</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">edge_width</span> <span class="o">=</span> <span class="n">perc</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">                 <span class="n">alpha</span> <span class="o">=</span> <span class="m">.4</span><span class="p">)</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">scale_edge_width</span><span class="p">(</span><span class="n">range</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="m">.01</span><span class="p">,</span> <span class="m">3</span><span class="p">))</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">geom_node_text</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">label</span> <span class="o">=</span> <span class="n">name</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">                     <span class="n">size</span> <span class="o">=</span> <span class="nf">betweenness</span><span class="p">(</span><span class="n">goa_graph</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">                     <span class="n">color</span> <span class="o">=</span> <span class="n">name</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">                 <span class="n">show.legend</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">scale_size</span><span class="p">(</span><span class="n">range</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="m">3</span><span class="p">,</span><span class="m">6</span><span class="p">))</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">scale_color_viridis_d</span><span class="p">(</span><span class="n">option</span> <span class="o">=</span> <span class="s">&#34;plasma&#34;</span><span class="p">)</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">guides</span><span class="p">(</span><span class="n">fill</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span> <span class="n">alpha</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span> <span class="n">edge_alpha</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span> <span class="n">edge_width</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">theme_graph</span><span class="p">()</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">  <span class="nf">labs</span><span class="p">(</span><span class="n">title</span> <span class="o">=</span> <span class="s">&#34;Confusion map of psytrance genres&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">       <span class="n">subtitle</span> <span class="o">=</span> <span class="s">&#34;The wider the connection between genre names, the easier to confuse.\nThe size of the node shows the centrality (betweenness)&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><img src="https://example.com/post/psytrance-genre-classifier/index_files/figure-html/unnamed-chunk-9-1.png" width="672" />
+<p>That&rsquo;s all!</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="https://media.giphy.com/media/lcWjHxKom5SwM/giphy.gif" alt="" loading="lazy" data-zoomable /></div>
+  </div></figure>
+{width=&ldquo;240&rdquo;}</p>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fexample.com%2Fpost%2Fpsytrance-genre-classifier%2F&amp;text=Psytrance&#43;genre&#43;classifier" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fexample.com%2Fpost%2Fpsytrance-genre-classifier%2F&amp;t=Psytrance&#43;genre&#43;classifier" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=Psytrance%20genre%20classifier&amp;body=https%3A%2F%2Fexample.com%2Fpost%2Fpsytrance-genre-classifier%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fexample.com%2Fpost%2Fpsytrance-genre-classifier%2F&amp;title=Psytrance&#43;genre&#43;classifier" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Psytrance&#43;genre&#43;classifier%20https%3A%2F%2Fexample.com%2Fpost%2Fpsytrance-genre-classifier%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fexample.com%2Fpost%2Fpsytrance-genre-classifier%2F&amp;title=Psytrance&#43;genre&#43;classifier" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://example.com/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu886113803ca0f3787ea93929b313061b_53136_270x270_fill_q75_lanczos_center.jpg" alt="Tamás Nagy, Ph.D."></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://example.com/">Tamás Nagy, Ph.D.</a></h5>
+      <h6 class="card-subtitle">Assistant Professor</h6>
+      <p class="card-text">My research interests include stress and emotion physiology, use of machine learning in psychological science, and improving psychological science</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/nagyt" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.co.uk/citations?hl=en&amp;user=Lec9WuYAAAAJ" target="_blank" rel="noopener">
+        <i class="fas fa-graduation-cap"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/nthun" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/tamas-nagy-phd-549bbb42/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/uploads/resume.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2023 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.f64289d8217e08e3afcd597d60836062.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+
+  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.ead4a376bcf2c4714888c770ea9b0040.js"></script>
+
+
+
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
