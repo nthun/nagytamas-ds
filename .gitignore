@@ -2,3 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
+assets/spotify_client_id.txt
+.DS_Store
+Thumbs.db
+.hugo_build.lock
