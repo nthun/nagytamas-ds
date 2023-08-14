@@ -1,2 +1,0 @@
-"client_id", "secret"
-"9f3fa9027e4a47019f664e934ad0fa59", "bc7eb775b7414594a07e0cb9c2981887"
