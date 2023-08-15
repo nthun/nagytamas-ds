@@ -2,61 +2,61 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>statistics | Academic</title>
-    <link>https://nthun.github.io/nagytamas-ds/tag/statistics/</link>
-      <atom:link href="https://nthun.github.io/nagytamas-ds/tag/statistics/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://nagytamas.netlify.app/tag/statistics/</link>
+      <atom:link href="https://nagytamas.netlify.app/tag/statistics/index.xml" rel="self" type="application/rss+xml" />
     <description>statistics</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 09 Mar 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://nthun.github.io/nagytamas-ds/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://nagytamas.netlify.app/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>statistics</title>
-      <link>https://nthun.github.io/nagytamas-ds/tag/statistics/</link>
+      <link>https://nagytamas.netlify.app/tag/statistics/</link>
     </image>
     
     <item>
       <title>Multi100 reanalysis of &#39;Childlessness and Psychological Well-Being in Context: A Multilevel Study on 24 European Countries&#39;</title>
-      <link>https://nthun.github.io/nagytamas-ds/project/2023-03-09-multi100/</link>
+      <link>https://nagytamas.netlify.app/project/2023-03-09-multi100/</link>
       <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://nthun.github.io/nagytamas-ds/project/2023-03-09-multi100/</guid>
+      <guid>https://nagytamas.netlify.app/project/2023-03-09-multi100/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Many Analysts Religion Project (MARP) - Blind hypothesis testing</title>
-      <link>https://nthun.github.io/nagytamas-ds/project/2022-02-12-marp/</link>
+      <link>https://nagytamas.netlify.app/project/2022-02-12-marp/</link>
       <pubDate>Sat, 12 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>https://nthun.github.io/nagytamas-ds/project/2022-02-12-marp/</guid>
+      <guid>https://nagytamas.netlify.app/project/2022-02-12-marp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Passing the Bechdel test in movies</title>
-      <link>https://nthun.github.io/nagytamas-ds/project/2021-05-26-bechdel/</link>
+      <link>https://nagytamas.netlify.app/project/2021-05-26-bechdel/</link>
       <pubDate>Wed, 26 May 2021 00:00:00 +0000</pubDate>
-      <guid>https://nthun.github.io/nagytamas-ds/project/2021-05-26-bechdel/</guid>
+      <guid>https://nagytamas.netlify.app/project/2021-05-26-bechdel/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Psytrance genre classifier</title>
-      <link>https://nthun.github.io/nagytamas-ds/project/2020-10-24-goa_styles/</link>
+      <link>https://nagytamas.netlify.app/project/2020-10-24-goa_styles/</link>
       <pubDate>Sat, 24 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>https://nthun.github.io/nagytamas-ds/project/2020-10-24-goa_styles/</guid>
+      <guid>https://nagytamas.netlify.app/project/2020-10-24-goa_styles/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Analysis on Game of Thrones marriage survival</title>
-      <link>https://nthun.github.io/nagytamas-ds/project/2018-05-26-got_marriage_survival/</link>
+      <link>https://nagytamas.netlify.app/project/2018-05-26-got_marriage_survival/</link>
       <pubDate>Sat, 26 May 2018 00:00:00 +0000</pubDate>
-      <guid>https://nthun.github.io/nagytamas-ds/project/2018-05-26-got_marriage_survival/</guid>
+      <guid>https://nagytamas.netlify.app/project/2018-05-26-got_marriage_survival/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Text mining Donald Trump&#39;s first UN speech</title>
-      <link>https://nthun.github.io/nagytamas-ds/project/2017-09-20-trump_un_speech_analysis/</link>
+      <link>https://nagytamas.netlify.app/project/2017-09-20-trump_un_speech_analysis/</link>
       <pubDate>Wed, 20 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>https://nthun.github.io/nagytamas-ds/project/2017-09-20-trump_un_speech_analysis/</guid>
+      <guid>https://nagytamas.netlify.app/project/2017-09-20-trump_un_speech_analysis/</guid>
       <description></description>
     </item>
     

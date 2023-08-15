@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>methods | Academic</title>
-    <link>https://nthun.github.io/nagytamas-ds/tag/methods/</link>
-      <atom:link href="https://nthun.github.io/nagytamas-ds/tag/methods/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://nagytamas.netlify.app/tag/methods/</link>
+      <atom:link href="https://nagytamas.netlify.app/tag/methods/index.xml" rel="self" type="application/rss+xml" />
     <description>methods</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 14 Jul 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://nthun.github.io/nagytamas-ds/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://nagytamas.netlify.app/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>methods</title>
-      <link>https://nthun.github.io/nagytamas-ds/tag/methods/</link>
+      <link>https://nagytamas.netlify.app/tag/methods/</link>
     </image>
     
     <item>
       <title>Regression Summer School 22</title>
-      <link>https://nthun.github.io/nagytamas-ds/workshop/2022-07-14-regression_summer/</link>
+      <link>https://nagytamas.netlify.app/workshop/2022-07-14-regression_summer/</link>
       <pubDate>Thu, 14 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://nthun.github.io/nagytamas-ds/workshop/2022-07-14-regression_summer/</guid>
+      <guid>https://nagytamas.netlify.app/workshop/2022-07-14-regression_summer/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Vienna power analyis in R workshop</title>
-      <link>https://nthun.github.io/nagytamas-ds/workshop/2022-04-05-vienna_power/</link>
+      <link>https://nagytamas.netlify.app/workshop/2022-04-05-vienna_power/</link>
       <pubDate>Tue, 05 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://nthun.github.io/nagytamas-ds/workshop/2022-04-05-vienna_power/</guid>
+      <guid>https://nagytamas.netlify.app/workshop/2022-04-05-vienna_power/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Meta-analysis workshop (Hungarian)</title>
-      <link>https://nthun.github.io/nagytamas-ds/workshop/2022-01-12-meta/</link>
+      <link>https://nagytamas.netlify.app/workshop/2022-01-12-meta/</link>
       <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://nthun.github.io/nagytamas-ds/workshop/2022-01-12-meta/</guid>
+      <guid>https://nagytamas.netlify.app/workshop/2022-01-12-meta/</guid>
       <description></description>
     </item>
     

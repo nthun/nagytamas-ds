@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>nlp | Academic</title>
-    <link>https://nthun.github.io/nagytamas-ds/tag/nlp/</link>
-      <atom:link href="https://nthun.github.io/nagytamas-ds/tag/nlp/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://nagytamas.netlify.app/tag/nlp/</link>
+      <atom:link href="https://nagytamas.netlify.app/tag/nlp/index.xml" rel="self" type="application/rss+xml" />
     <description>nlp</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 20 Sep 2017 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://nthun.github.io/nagytamas-ds/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://nagytamas.netlify.app/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>nlp</title>
-      <link>https://nthun.github.io/nagytamas-ds/tag/nlp/</link>
+      <link>https://nagytamas.netlify.app/tag/nlp/</link>
     </image>
     
     <item>
       <title>Text mining Donald Trump&#39;s first UN speech</title>
-      <link>https://nthun.github.io/nagytamas-ds/project/2017-09-20-trump_un_speech_analysis/</link>
+      <link>https://nagytamas.netlify.app/project/2017-09-20-trump_un_speech_analysis/</link>
       <pubDate>Wed, 20 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>https://nthun.github.io/nagytamas-ds/project/2017-09-20-trump_un_speech_analysis/</guid>
+      <guid>https://nagytamas.netlify.app/project/2017-09-20-trump_un_speech_analysis/</guid>
       <description></description>
     </item>
     

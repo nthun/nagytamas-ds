@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>animated | Academic</title>
-    <link>https://nthun.github.io/nagytamas-ds/tag/animated/</link>
-      <atom:link href="https://nthun.github.io/nagytamas-ds/tag/animated/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://nagytamas.netlify.app/tag/animated/</link>
+      <atom:link href="https://nagytamas.netlify.app/tag/animated/index.xml" rel="self" type="application/rss+xml" />
     <description>animated</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 26 May 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://nthun.github.io/nagytamas-ds/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://nagytamas.netlify.app/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>animated</title>
-      <link>https://nthun.github.io/nagytamas-ds/tag/animated/</link>
+      <link>https://nagytamas.netlify.app/tag/animated/</link>
     </image>
     
     <item>
       <title>Analysis on Game of Thrones marriage survival</title>
-      <link>https://nthun.github.io/nagytamas-ds/project/2018-05-26-got_marriage_survival/</link>
+      <link>https://nagytamas.netlify.app/project/2018-05-26-got_marriage_survival/</link>
       <pubDate>Sat, 26 May 2018 00:00:00 +0000</pubDate>
-      <guid>https://nthun.github.io/nagytamas-ds/project/2018-05-26-got_marriage_survival/</guid>
+      <guid>https://nagytamas.netlify.app/project/2018-05-26-got_marriage_survival/</guid>
       <description></description>
     </item>
     
