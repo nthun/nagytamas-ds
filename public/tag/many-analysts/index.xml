@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>many-analysts | Academic</title>
-    <link>/tag/many-analysts/</link>
-      <atom:link href="/tag/many-analysts/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://nthun.github.io/nagytamas-ds/tag/many-analysts/</link>
+      <atom:link href="https://nthun.github.io/nagytamas-ds/tag/many-analysts/index.xml" rel="self" type="application/rss+xml" />
     <description>many-analysts</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 09 Mar 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://nthun.github.io/nagytamas-ds/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>many-analysts</title>
-      <link>/tag/many-analysts/</link>
+      <link>https://nthun.github.io/nagytamas-ds/tag/many-analysts/</link>
     </image>
     
     <item>
       <title>Multi100 reanalysis of &#39;Childlessness and Psychological Well-Being in Context: A Multilevel Study on 24 European Countries&#39;</title>
-      <link>/project/2023-03-09-multi100/</link>
+      <link>https://nthun.github.io/nagytamas-ds/project/2023-03-09-multi100/</link>
       <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>/project/2023-03-09-multi100/</guid>
+      <guid>https://nthun.github.io/nagytamas-ds/project/2023-03-09-multi100/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Many Analysts Religion Project (MARP) - Blind hypothesis testing</title>
-      <link>/project/2022-02-12-marp/</link>
+      <link>https://nthun.github.io/nagytamas-ds/project/2022-02-12-marp/</link>
       <pubDate>Sat, 12 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>/project/2022-02-12-marp/</guid>
+      <guid>https://nthun.github.io/nagytamas-ds/project/2022-02-12-marp/</guid>
       <description></description>
     </item>
     

@@ -2,201 +2,193 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/talk/example-talk/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/talk/example-talk/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/event/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/event/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/</loc>
     <lastmod>2023-08-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/tag/eda/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/tag/eda/</loc>
     <lastmod>2023-04-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/project/2023-04-24-london_marathon_eda/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/project/2023-04-24-london_marathon_eda/</loc>
     <lastmod>2023-04-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/project/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/project/</loc>
     <lastmod>2023-04-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/tag/r/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/tag/r/</loc>
     <lastmod>2023-04-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/tags/</loc>
     <lastmod>2023-04-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/tag/many-analysts/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/tag/many-analysts/</loc>
     <lastmod>2023-03-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/project/2023-03-09-multi100/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/project/2023-03-09-multi100/</loc>
     <lastmod>2023-03-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/tag/replication/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/tag/replication/</loc>
     <lastmod>2023-03-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/tag/statistics/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/tag/statistics/</loc>
     <lastmod>2023-03-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/tag/methods/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/tag/methods/</loc>
     <lastmod>2022-07-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/workshop/2022-07-14-regression_summer/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/workshop/2022-07-14-regression_summer/</loc>
     <lastmod>2022-07-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/workshop/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/workshop/</loc>
     <lastmod>2022-07-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/workshop/2022-04-05-vienna_power/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/workshop/2022-04-05-vienna_power/</loc>
     <lastmod>2022-04-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/workshop/2022-03-14-intro_to_r/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/workshop/2022-03-14-intro_to_r/</loc>
     <lastmod>2022-03-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/project/2022-02-12-marp/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/project/2022-02-12-marp/</loc>
     <lastmod>2022-02-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/workshop/2022-01-12-meta/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/workshop/2022-01-12-meta/</loc>
     <lastmod>2022-01-11T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/project/2021-05-26-bechdel/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/project/2021-05-26-bechdel/</loc>
     <lastmod>2021-05-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/tag/regression/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/tag/regression/</loc>
     <lastmod>2021-05-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/tag/machine-learning/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/tag/machine-learning/</loc>
     <lastmod>2020-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/tag/music/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/tag/music/</loc>
     <lastmod>2020-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/tag/network-analysis/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/tag/network-analysis/</loc>
     <lastmod>2020-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/project/2020-10-24-goa_styles/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/project/2020-10-24-goa_styles/</loc>
     <lastmod>2020-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/tag/tidymodels/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/tag/tidymodels/</loc>
     <lastmod>2020-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/tag/webscraping/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/tag/webscraping/</loc>
     <lastmod>2020-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/publication-type/3/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/publication-type/3/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/publication/preprint/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/publication/preprint/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/publication_types/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/publication_types/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/publication/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/publication/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/tag/source-themes/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/tag/source-themes/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/slides/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>/slides/example/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>/project/2018-05-26-got_marriage_survival/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/project/2018-05-26-got_marriage_survival/</loc>
     <lastmod>2018-05-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/tag/animated/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/tag/animated/</loc>
     <lastmod>2018-05-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/tag/map/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/tag/map/</loc>
     <lastmod>2018-05-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/tag/survival-analysis/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/tag/survival-analysis/</loc>
     <lastmod>2018-05-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/tag/nlp/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/tag/nlp/</loc>
     <lastmod>2017-09-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/tag/politics/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/tag/politics/</loc>
     <lastmod>2017-09-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/tag/sentiment/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/tag/sentiment/</loc>
     <lastmod>2017-09-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/tag/text/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/tag/text/</loc>
     <lastmod>2017-09-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/project/2017-09-20-trump_un_speech_analysis/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/project/2017-09-20-trump_un_speech_analysis/</loc>
     <lastmod>2017-09-20T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/publication-type/2/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/publication-type/2/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/publication/journal-article/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/publication/journal-article/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/publication-type/1/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/publication-type/1/</loc>
     <lastmod>2013-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/publication/conference-paper/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/publication/conference-paper/</loc>
     <lastmod>2013-07-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/admin/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/admin/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/categories/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>/post/</loc>
+    <loc>https://nthun.github.io/nagytamas-ds/post/</loc>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
