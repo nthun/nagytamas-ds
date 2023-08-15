@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>eda | Academic</title>
+    <link>/tag/eda/</link>
+      <atom:link href="/tag/eda/index.xml" rel="self" type="application/rss+xml" />
+    <description>eda</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>eda</title>
+      <link>/tag/eda/</link>
+    </image>
+    
+    <item>
+      <title>London Marathon data exploration</title>
+      <link>/project/2023-04-24-london_marathon_eda/</link>
+      <pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>/project/2023-04-24-london_marathon_eda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multi100 reanalysis of &#39;Childlessness and Psychological Well-Being in Context: A Multilevel Study on 24 European Countries&#39;</title>
+      <link>/project/2023-03-09-multi100/</link>
+      <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>/project/2023-03-09-multi100/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Many Analysts Religion Project (MARP) - Blind hypothesis testing</title>
+      <link>/project/2022-02-12-marp/</link>
+      <pubDate>Sat, 12 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>/project/2022-02-12-marp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Passing the Bechdel test in movies</title>
+      <link>/project/2021-05-26-bechdel/</link>
+      <pubDate>Wed, 26 May 2021 00:00:00 +0000</pubDate>
+      <guid>/project/2021-05-26-bechdel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Text mining Donald Trump&#39;s first UN speech</title>
+      <link>/project/2017-09-20-trump_un_speech_analysis/</link>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>/project/2017-09-20-trump_un_speech_analysis/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
