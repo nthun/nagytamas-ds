@@ -28,6 +28,7 @@ sections:
       folders:
       - workshop
     title: Workshops
+    text: "I regularly hold workshops for researchers about advanced research methodology and R programming."
   design:
     columns: "1"
     flip_alt_rows: false
