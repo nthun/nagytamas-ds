@@ -40,9 +40,20 @@ social:
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/tamas-nagy-phd-549bbb42/
+- icon: osf
+  icon_pack: ai
+  link: https://osf.io/uerfy/
+- icon: stackoverflow
+  icon_pack: ai
+  link: https://stackoverflow.com/users/6618803/tamas-nagy  
+- icon: orcid
+  icon_pack: ai
+  link: http://orcid.org/0000-0001-5244-0356 
 - icon: cv
   icon_pack: ai
   link: uploads/resume.pdf
+  
+
 status:
   icon: ☕️
 superuser: true

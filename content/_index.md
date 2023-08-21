@@ -12,11 +12,7 @@ sections:
       folders:
       - project
     title: Projects
-    summary: "Welcome to my portfolio, a curated collection of projects that I have taken immense pleasure in crafting. These endeavors represent a compilation of concise undertakings, which not only afforded me personal gratification but also facilitated the acquisition of novel skills. Within this assortment, you will encounter animated graphs, bespoke cartography, and sophisticated statistical techniques. It is noteworthy that several of these initiatives originated during interactive coding sessions conducted within my instructional capacity for the Statistical Programming / Data Analysis in R course at ELTE. Additionally, certain endeavors were cultivated through collaborative efforts within the professional sphere, including projects centered around replication analysis."
-  design:
-    columns: "1"
-    flip_alt_rows: false
-    view: compact
+    text: "The following quick projects are not directly connected to my research field, but were fun to create and also taught me some cool new stuff like animated graphs, custom maps, and nifty statistical methods. Some of these projects actually sprouted from live coding sessions I hosted in my 'Statistical Programming / Data Analysis in R' course at ELTE. Another few came from professional collaborations like replication projects. "
   id: projects
 - block: portfolio
   content:
@@ -78,15 +74,7 @@ sections:
     appointment_url: http://nagytamas-meeting.youcanbook.me
     autolink: true
     contact_links:
-    - icon: twitter
-      icon_pack: fab
-      link: https://twitter.com/nagyt
-      name: DM Me
-    directions: Take the elevator to the 5th floor, follow the corridor to Room 521
     email: nagy.tamas@ppk.elte.hu
-    office_hours:
-    - Monday 10:00 to 13:00
-    - Wednesday 09:00 to 10:00
     subtitle: null
     title: Contact
   design:
