@@ -4,12 +4,14 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Appearance
+citation_style: APA
 
 appearance:
   theme_day: minimal
   theme_night: minimal
   font: minimal
   font_size: L
+  citation_style: APA
 
 # SEO
 
@@ -18,8 +20,7 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'A highly-customizable Hugo academic resume theme powered by Wowchemy website builder.'
-    twitter: 'wowchemy'
+    description: 'Tamas Nagy - personal homepage'
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -99,6 +100,7 @@ features:
     provider: ''
     api_key: ''
     zoom: 15
+  citation_style: APA
 
 # Extensions
 
@@ -108,6 +110,7 @@ extensions:
     local_backend: false
   academicons:
     enable: true
+  citation_style: APA
 
 # Security
 
