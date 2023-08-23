@@ -60,7 +60,7 @@ superuser: true
 title: Tamás Nagy, Ph.D.
 ---
 
-Tamas Nagy is an assistant professor of psychology at ELTE Eötvös Loránd University, Budapest. His research interests include stress and emotion psychophysiology, the application of machine learning and computational science in psychological research, and improving psychological science. He has been teaching data analysis and statistical inference for psychology students on B.A., M.A., and Ph.D. levels. He teaches courses in advanced research methodology, statistics, and R programming.
+Tamás Nagy is an assistant professor of psychology at ELTE Eötvös Loránd University, Budapest. His research interests include stress and emotion psychophysiology, the application of machine learning and computational science in psychological research, and improving psychological science. He has been teaching data analysis and statistical inference for psychology students on B.A., M.A., and Ph.D. levels. He teaches courses in advanced research methodology, statistics, and R programming.
 
 He leads the ELTE Stress and Emotions Lab, which uses experimental methods and psychophysiology to uncover how we perceive physiological arousal, and how it affects our emotions, cognition, and behavior.
 {style="text-align: justify;"}

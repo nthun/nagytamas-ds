@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publications | Academic</title>
+    <title>Publications | Tamas Nagy</title>
     <link>https://nagytamas.netlify.app/publication/</link>
       <atom:link href="https://nagytamas.netlify.app/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 May 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://nagytamas.netlify.app/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
@@ -13,55 +13,155 @@
     </image>
     
     <item>
-      <title>An example preprint / working paper</title>
-      <link>https://nagytamas.netlify.app/publication/preprint/</link>
-      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://nagytamas.netlify.app/publication/preprint/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <title>Data from an International Multi-Centre Study of Statistics and Mathematics Anxieties and Related Variables in University Students (the SMARVUS Dataset)</title>
+      <link>https://nagytamas.netlify.app/publication/terry-2023-uw/</link>
+      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://nagytamas.netlify.app/publication/terry-2023-uw/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>An example journal article</title>
-      <link>https://nagytamas.netlify.app/publication/journal-article/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>https://nagytamas.netlify.app/publication/journal-article/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <title>Brief growth mindset and mindfulness inductions to facilitate task persistence after negative feedback</title>
+      <link>https://nagytamas.netlify.app/publication/nagy-2023-qp/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://nagytamas.netlify.app/publication/nagy-2023-qp/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>An example conference paper</title>
-      <link>https://nagytamas.netlify.app/publication/conference-paper/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>https://nagytamas.netlify.app/publication/conference-paper/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <title>A multi-lab test of the facial feedback hypothesis by the Many Smiles Collaboration</title>
+      <link>https://nagytamas.netlify.app/publication/coles-2022-ny/</link>
+      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://nagytamas.netlify.app/publication/coles-2022-ny/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The positive gain spiral of job resources, work engagement, opportunity and motivation on training transfer</title>
+      <link>https://nagytamas.netlify.app/publication/salamon-2022-gm/</link>
+      <pubDate>Thu, 01 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://nagytamas.netlify.app/publication/salamon-2022-gm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A many-analysts approach to the relation between religiosity and well-being</title>
+      <link>https://nagytamas.netlify.app/publication/hoogeveen-2022-ve/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://nagytamas.netlify.app/publication/hoogeveen-2022-ve/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Situational factors shape moral judgements in the trolley dilemma in Eastern, Southern and Western countries in a culturally diverse sample</title>
+      <link>https://nagytamas.netlify.app/publication/bago-2022-ei/</link>
+      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://nagytamas.netlify.app/publication/bago-2022-ei/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Negativity in delayed affective recall is related to the borderline personality trait</title>
+      <link>https://nagytamas.netlify.app/publication/maraz-2022-ge/</link>
+      <pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://nagytamas.netlify.app/publication/maraz-2022-ge/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The moderating effect of coworkers&#39; training participation on the influence of peer support in the transfer process</title>
+      <link>https://nagytamas.netlify.app/publication/salamon-2022-tg/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://nagytamas.netlify.app/publication/salamon-2022-tg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The interplay between the level of voluntary participation and supervisor support on trainee motivation and transfer</title>
+      <link>https://nagytamas.netlify.app/publication/salamon-2021-bi/</link>
+      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://nagytamas.netlify.app/publication/salamon-2021-bi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Having the Cake and Eating It Too: First-Order, Second-Order and Bifactor Representations of Work Engagement</title>
+      <link>https://nagytamas.netlify.app/publication/salamon-2021-xd/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://nagytamas.netlify.app/publication/salamon-2021-xd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Home confinement during the COVID-19: day-to-day associations of sleep quality with rumination, psychotic-like experiences, and somatic symptoms</title>
+      <link>https://nagytamas.netlify.app/publication/simor-2021-fv/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://nagytamas.netlify.app/publication/simor-2021-fv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>When bad gets worse: Negative wording amplifies negative recall in persons with the borderline personality trait</title>
+      <link>https://nagytamas.netlify.app/publication/maraz-2021-bv/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://nagytamas.netlify.app/publication/maraz-2021-bv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The relationship between subjective sleep quality and cognitive performance in healthy young adults: Evidence from three empirical studies</title>
+      <link>https://nagytamas.netlify.app/publication/zavecz-2020-ke/</link>
+      <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://nagytamas.netlify.app/publication/zavecz-2020-ke/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lateralized rhythmic acoustic stimulation during daytime NREM sleep enhances slow waves</title>
+      <link>https://nagytamas.netlify.app/publication/simor-2018-ld/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>https://nagytamas.netlify.app/publication/simor-2018-ld/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Psychophysiological responses to distress and eustress</title>
+      <link>https://nagytamas.netlify.app/publication/nagy-2016-dc/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>https://nagytamas.netlify.app/publication/nagy-2016-dc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Frequent nightmares are associated with blunted cortisol awakening response in women</title>
+      <link>https://nagytamas.netlify.app/publication/nagy-2015-nw/</link>
+      <pubDate>Sat, 01 Aug 2015 00:00:00 +0000</pubDate>
+      <guid>https://nagytamas.netlify.app/publication/nagy-2015-nw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A fluid response: Alpha-amylase reactions to acute laboratory stress are related to sample timing and saliva flow rate</title>
+      <link>https://nagytamas.netlify.app/publication/nagy-2015-kb/</link>
+      <pubDate>Wed, 01 Jul 2015 00:00:00 +0000</pubDate>
+      <guid>https://nagytamas.netlify.app/publication/nagy-2015-kb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The effectiveness of suggestive techniques in reducing postoperative side effects: a meta-analysis of randomized controlled trials</title>
+      <link>https://nagytamas.netlify.app/publication/kekecs-2014-df/</link>
+      <pubDate>Mon, 01 Dec 2014 00:00:00 +0000</pubDate>
+      <guid>https://nagytamas.netlify.app/publication/kekecs-2014-df/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The effect of patient-centeredness and gender of professional role models on trainees&#39; mentalization responses. Implications for film-aided education</title>
+      <link>https://nagytamas.netlify.app/publication/balint-2014-kp/</link>
+      <pubDate>Wed, 01 Oct 2014 00:00:00 +0000</pubDate>
+      <guid>https://nagytamas.netlify.app/publication/balint-2014-kp/</guid>
+      <description></description>
     </item>
     
   </channel>
