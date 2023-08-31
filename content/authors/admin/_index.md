@@ -9,14 +9,14 @@ education:
     institution: ELTE Eötvös Loránd University
     year: 2006
 
-email: ""
+email: "nagy.tamas@ppk.elte.hu"
 first_name: Tamás
+last_name: Nagy
 highlight_name: true
 interests:
 - Stress and emotion physiology
 - Machine learning and computational science
 - Improving psychological science
-last_name: Nagy
 organizations:
 - name: ELTE Eötvös Loránd University
   url: https://www.ppk.elte.hu/
@@ -51,7 +51,7 @@ social:
   link: http://orcid.org/0000-0001-5244-0356 
 - icon: cv
   icon_pack: ai
-  link: uploads/resume.pdf
+  link: uploads/nagytamas_CV_EN.pdf
   
 
 status:
