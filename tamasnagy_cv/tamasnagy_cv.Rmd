@@ -4,29 +4,29 @@ surname: Nagy
 position: "Assistant Professor"
 address: "Institute of Psychololgy, ELTE Eötvös Loránd University"
 phone: +36 30 627 6313
-profilepic: mariecurie.jpg
+profilepic: "`r here::here('content/authors/admin/nt_cv_image.jpg')`"
 www: nagytamas.netlify.app
 email: nagytamas.hungary@gmail.com
 twitter: nagyt
 github: nthun
 linkedin: tamas-nagy-phd-549bbb42
-date: "`r format(Sys.time(), '%Y %B')`"
-aboutme: "Tamás Nagy is an assistant professor of psychology at ELTE Eötvös Loránd University, Budapest. His research interests include stress and emotion psychophysiology, the application of machine learning and computational science in psychological research, and improving psychological science. He has been teaching data analysis and statistical inference for psychology students on B.A., M.A., and Ph.D. levels. He teaches courses in advanced research methodology, statistics, and R programming. He leads the ELTE Stress and Emotions Lab, which uses experimental methods and psychophysiology to uncover how we perceive physiological arousal, and how it affects our emotions, cognition, and behavior."
-orcid: 0000-0001-5244-0356
-scholar: Lec9WuYAAAAJ
+date: "`r format(Sys.time(), '%B %Y')`"
+aboutme: "Tamás Nagy is an assistant professor of psychology at ELTE Eötvös Loránd University, Budapest. He has been teaching advanced research methodology, data analysis and statistical inference, and R programming for psychology students. He leads the ELTE Stress and Emotions Lab, which uses experimental methods and psychophysiology to uncover how we perceive physiological arousal, and how it affects our emotions, cognition, and behavior."
 output: vitae::twentyseconds
-editor_options: 
-  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
-options(tinytex.verbose = TRUE)
 library(vitae)
 library(tidyverse)
 library(lubridate)
-
 ```
+
+# Personal information  
+
+Nationality: Hungarian  
+Date of birth: 1st of July, 1981  
+Address: 1147, Budapest, Fűrész utca 73B 1/4
 
 # Research interests
 
@@ -34,30 +34,139 @@ library(lubridate)
 - Machine learning and computational science
 - Improving psychological science
 
+# Workplaces
+
+
+```{r}
+tribble(
+  ~ Position, ~Years, ~Institution, ~Where, ~Why, 
+  "Assistant professor", "2017-", "ELTE Eötvös Loránd University, Institute of Psychology", "Budapest, Hungary", c("Main activities: Teaching (research methodology, data analysis, programming), research", "Main achievements: Reforming the “Data analysis and statistical inference” course for Psychology undergraduates, Establishing the R programming training for graduate students, Creating a free online course for high school students called “The Science of Psychology”, Taking part in the training of international students, Overseeing the faculty’s talent management program, Winning and managing 2 research grants and 4 talent management grants, Running the Stress & Emotions Lab."),
+
+  "Lead researcher", "2014-2017", "Synetiq Ltd.", "Budapest, Hungary", c("Main activities: Designing, managing, and analyzing neuromarkerting research projects at a  startup", "Main achievements: Creating the research protocol involving psychophysiological methods and surveys. Leading successful research projects for large media and retail companies including HBO, AXN, RTL, BBC, The Dutch National TV, Lidl, Tesco, etc. Managed a research team to conduct media studies."), 
+
+  "Research trainee", "2012 – 2013", "The University of Amsterdam", "Amsterdam, The Netherlands", "Main activities: Writing a manuscript on the effect of the acute stress response on alpha-amylase and cardiovascular indicators. PI: Dr. Jos Bosch", 
+
+  "Research assistant", "2008-2010", "Hungarian Academy of Sciences", "Budapest, Hungary", "Main activities: Analyzing and planning of quantitative studies, preparing manuscripts in the Comparative Cross-cultural Psychology Lab", 
+
+  "Counseling psychologist", "2006-2008", "Budapest University of Technology and Economics", "Budapest, Hungary", "Main activities: Psychological counseling for students, conducting psychological measurements"
+
+)  |> 
+  detailed_entries(Position, Years, Institution, Where, Why)
+```
+
+
 # Education
 
 ```{r}
-
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where,
-  "Ph.D. in Psychology", "2010-2015", "ELTE Eötvös Loránd University (and partly the University of Amsterdam)", "Budapest, Hungary",
+  "Ph.D. in Psychology", "2010-2015", "ELTE Eötvös Loránd University", "Budapest, Hungary",
   "M.A. in Psychology", "2001-2006", "ELTE Eötvös Loránd University", "Budapest, Hungary"
 )  |> 
   detailed_entries(Degree, Year, Institution, Where, .protect = TRUE)
 ```
+
+# University offices and memberships
+
+
+
+```{r}
+tribble(
+    ~ Year, ~ Position, 
+    "2023-", "Member of the Institutional Research Ethics Committee",
+    "2022-", "Head of the Stress & Emotions Research Group",
+    "2019-2021", "Acting head of the Social Interventions Research Group",
+    "2019-", "Member of the Research Transparency Committee",
+    "2018-", "Member of the ELTE Talent Management Council",
+    "2018-", "Faculty head of the Scientific Student Circle of ELTE PPK"
+    ) |> 
+    brief_entries(Position, Year)
+```
+
+
+# Grants
+
+```{r}
+tribble(
+    ~ Year, ~ Grant, ~ Details,
+    "2018, 2019, 2021, 2022", "National Talent Program", 
+    c("Amount: HUF 3.2/2.8/1.4/3.4M", "Description: Short (1 year) grants to fund the faculty talent management program"),
+    
+    "2019-2023", "Postdoctoral
+    grant", c("Amount: HUF 25.5M", "Description: National Scientific Basic Research Programs - Research grant to study the role of emotional arousal in media-induced stress recovery"),
+    
+    "2018-2021", "Young researcher grant", c("Amount: HUF 28.5M", "Description: National Scientific Basic Research Programs - Research grant to study the effects of intelligence mindset and mindfulness meditation on performance")
+
+) |> 
+    detailed_entries(what = Grant, when = Year, why = Details)
+
+```
+
+# Awards and honors
+
+```{r}
+tribble(
+    ~ Year, ~ Grant, ~ Details,
+    "2020", "ELTE's Promising Researcher special award for open Science", "For outstanding achievements in the field of open science",
+    "2018", "Erasmus+ research and training mobility", "Participation in a Bayesian statistics workshop in Amsterdam",
+    "2016", "Special prize at the Brain and Vision hackathon", "For integrating EEG systems into mobile, PC, and web applications",
+    "2012-2013", "Erasmus+ traineeship", "University of Amsterdam, Netherlands",
+    "2010-2014", "Hungarian state scholarship", "To pursue doctoral studies at ELTE"
+    ) |> 
+    detailed_entries(what = Grant, when = Year, why = Details)
+```
+
+# Workshops held
+```{r}
+
+tribble(
+    ~ Year, ~ Title, ~With, ~ Details,
+    "2022", "Regression Summer School 22", "University of Vienna", "Regression summer course jointly held of the students of ELTE and University of Vienna, https://osf.io/em5k4/",
+    
+    "2022", "Vienna power analyis in R workshop", "University of Vienna", "Workshop about simulation based power analysis in R, https://osf.io/2tp3y/",
+
+    "2022", "Introduction to R and the tidyverse", "University of Vienna", "Two day introduction to R, https://osf.io/mx3vw/",
+    
+    "2022", "Meta-analysis workshop", "Semmelweiss University", "Workshop about the theory and practice of meta-analysis (Hungarian), https://osf.io/ug8cz/",
+    
+    "2021", "Open science workshop", "ELTE Eötvös Loránd University", "Workshop about open science practices (Hungarian), https://osf.io/fz3pb/",
+    
+    "2020", "Open science workshop", "ELTE Eötvös Loránd University", "Workshop about open science practices (Hungarian), https://osf.io/swntk/",
+
+) |> 
+    detailed_entries(what = Title, when = Year, with = With, why = Details)
+```
+
+
+# Teaching experience 
+
+- Data analysis and statistical inference
+- Multivariate statistics
+- Statistical programming and data analysis in R
+- Advanced research methodology in clinical and health psychology
+- Advanced data analysis methods in R
+
+# Languages
+
+- English (professional level)
+- Hungarian (native language)
+- German (limited professional level)
+- Japanese (basic level)
+
+# Journal positions and activity
+
+- Associate editor at Hungarian Psychology Review (Magyar Pszichológiai Szemle) 
+- Peer-review activity: https://www.webofscience.com/wos/author/record/J-5969-2019
+
+# Preprints and manuscripts under review
+
 
 
 # Publications
 
 ```{r}
 
-bibliography_entries(here::here("publications.bib")) %>%
+bibliography_entries(here::here("publications.bib")) |> 
   mutate(year = as_date(issued) |> year()) |>
-  arrange(rev(year))
+  arrange(-year)
 ```
-
-
-
-
-
-

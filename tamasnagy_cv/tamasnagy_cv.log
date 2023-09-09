@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.28)  28 AUG 2023 23:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.9)  10 SEP 2023 00:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **tamasnagy_cv.tex
 (./tamasnagy_cv.tex
 LaTeX2e <2023-06-01> patch level 1
-L3 programming layer <2023-08-11>
+L3 programming layer <2023-08-29>
 (./twentysecondcv.cls
 Document Class: twentysecondcv 2018/11/24 CV class
 (c:/Users/thoma/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
@@ -599,53 +599,178 @@ Package hyperref Info: Link coloring OFF on input line 96.
 \@outlinefile=\write4
 \openout4 = `tamasnagy_cv.out'.
 
-<mariecurie.jpg, id=7, 354.32375pt x 481.8pt>
-File: mariecurie.jpg Graphic file (type jpg)
-<use mariecurie.jpg>
-Package pdftex.def Info: mariecurie.jpg  used on input line 115.
-(pdftex.def)             Requested size: 142.26378pt x 193.45174pt.
+<C:/Users/thoma/OneDrive/Documents/GitHub/nagytamas-ds/content/authors/admin/nt_cv_image.jpg, id=7, 1204.5pt x 1806.75pt>
+File: C:/Users/thoma/OneDrive/Documents/GitHub/nagytamas-ds/content/authors/admin/nt_cv_image.jpg Graphic file (type jpg)
+<use C:/Users/thoma/OneDrive/Documents/GitHub/nagytamas-ds/content/authors/admin/nt_cv_image.jpg>
+Package pdftex.def Info: C:/Users/thoma/OneDrive/Documents/GitHub/nagytamas-ds/content/authors/admin/nt_cv_image.jpg  used on input line 111.
+(pdftex.def)             Requested size: 142.26378pt x 213.38211pt.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/n' in size <20.74> not available
-(Font)              Font shape `T1/ClearSans-TLF/regular/n' tried instead on input line 115.
+(Font)              Font shape `T1/ClearSans-TLF/regular/n' tried instead on input line 111.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/n' will be
-(Font)              scaled to size 20.74pt on input line 115.
+(Font)              scaled to size 20.74pt on input line 111.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/n' in size <14.4> not available
-(Font)              Font shape `T1/ClearSans-TLF/regular/n' tried instead on input line 115.
+(Font)              Font shape `T1/ClearSans-TLF/regular/n' tried instead on input line 111.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/n' will be
-(Font)              scaled to size 14.4pt on input line 115.
+(Font)              scaled to size 14.4pt on input line 111.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 115.
+(Font)              <7> on input line 111.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 115.
-LaTeX Font Info:    Trying to load font information for U+fontawesometwo on input line 115.
+(Font)              <5> on input line 111.
+LaTeX Font Info:    Trying to load font information for U+fontawesometwo on input line 111.
 (c:/Users/thoma/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontawesome/ufontawesometwo.fd
 File: ufontawesometwo.fd 2016/05/22 Font definitions for U/fontawesometwo.
 )
-Underfull \hbox (badness 1436) in paragraph at lines 115--115
+Underfull \hbox (badness 1436) in paragraph at lines 111--111
 []\T1/ClearSans-TLF/regular/n/10 Institute of Psy-chololgy, ELTE
  []
 
-LaTeX Font Info:    Trying to load font information for T1+DejaVuSansMono-TLF on input line 115.
+LaTeX Font Info:    Trying to load font information for T1+DejaVuSansMono-TLF on input line 111.
 (c:/Users/thoma/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/dejavu/T1DejaVuSansMono-TLF.fd
 File: T1DejaVuSansMono-TLF.fd 2011/06/01 Font definitions for T1/DejaVuSansMono-TLF.
 )
 LaTeX Font Info:    Font shape `T1/DejaVuSansMono-TLF/m/n' will be
-(Font)              scaled to size 8.6pt on input line 115.
-LaTeX Font Info:    Trying to load font information for U+fontawesomethree on input line 115.
+(Font)              scaled to size 8.6pt on input line 111.
+LaTeX Font Info:    Trying to load font information for U+fontawesomethree on input line 111.
 (c:/Users/thoma/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontawesome/ufontawesomethree.fd
 File: ufontawesomethree.fd 2016/05/22 Font definitions for U/fontawesomethree.
 )
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.115 \makeprofile
-                   % Print the sidebar 
-Here is how much of TeX's memory you used:
- 22981 strings out of 477106
- 427967 string characters out of 5809452
- 1919248 words of memory out of 5000000
- 43655 multiletter control sequences out of 15000+600000
- 575320 words of font info for 42 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 117i,10n,121p,590b,735s stack positions out of 10000i,1000n,20000p,200000b,200000s
+LaTeX Font Info:    Trying to load font information for TS1+ClearSans-TLF on input line 129.
+(c:/Users/thoma/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/clearsans/TS1ClearSans-TLF.fd
+File: TS1ClearSans-TLF.fd 2019/10/16 (autoinst) Font definitions for TS1/ClearSans-TLF.
+)
+LaTeX Font Info:    Font shape `TS1/ClearSans-TLF/m/n' in size <10> not available
+(Font)              Font shape `TS1/ClearSans-TLF/regular/n' tried instead on input line 129.
+LaTeX Font Info:    Font shape `TS1/ClearSans-TLF/regular/n' will be
+(Font)              scaled to size 10.0pt on input line 129.
+LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/n' in size <8> not available
+(Font)              Font shape `T1/ClearSans-TLF/regular/n' tried instead on input line 147.
+LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/n' will be
+(Font)              scaled to size 8.0pt on input line 147.
 
-!  ==> Fatal error occurred, no output PDF file produced!
+Underfull \hbox (badness 10000) in paragraph at lines 141--170
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--180
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--195
+
+ []
+
+
+Overfull \hbox (51.66518pt too wide) in alignment at lines 201--221
+[] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--222
+
+ []
+
+[1
+
+{c:/Users/thoma/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/Users/thoma/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/clearsans/clr_zxbkm4.enc}{c:/Users/thoma/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/clearsans/clr_nrghxx.enc}{c:/Users/thoma/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}{c:/Users/thoma/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/dejavu/dejavumono_t1-type1.enc}{c:/Users/thoma/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomethree.enc} <c:/Users/thoma/OneDrive/Documents/GitHub/nagytamas-ds/content/authors/admin/nt_cv_image.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 228--255
+
+ []
+
+
+Underfull \hbox (badness 1365) in paragraph at lines 266--266
+[]\T1/ClearSans-TLF/regular/n/10 Regression sum-mer course jointly held of the
+ []
+
+
+Underfull \hbox (badness 7012) in paragraph at lines 266--266
+\T1/ClearSans-TLF/regular/n/10 stu-dents of ELTE and Uni-ver-sity of Vi-enna,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--293
+
+ []
+
+LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/sl' in size <10> not available
+(Font)              Font shape `T1/ClearSans-TLF/regular/sl' tried instead on input line 324.
+LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/sl' in size <10> not available
+(Font)              Font shape `T1/ClearSans-TLF/regular/it' tried instead on input line 324.
+LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/it' will be
+(Font)              scaled to size 10.0pt on input line 324.
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
+
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 15.4pt, for example:
+(fancyhdr)                \setlength{\footskip}{15.4pt}.
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 336--338
+[]\T1/ClearSans-TLF/regular/n/10 Peer-review ac-tiv-ity: []$\T1/DejaVuSansMono-TLF/m/n/10 https : / / www . webofscience . com / wos / author /
+ []
+
+LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/it' in size <10> not available
+(Font)              Font shape `T1/ClearSans-TLF/regular/it' tried instead on input line 358.
+LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/it' will be
+(Font)              scaled to size 10.0pt on input line 358.
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
+
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 15.4pt, for example:
+(fancyhdr)                \setlength{\footskip}{15.4pt}.
+
+[3]
+Underfull \hbox (badness 1331) in paragraph at lines 500--500
+[]\T1/ClearSans-TLF/regular/n/10 Bálint, K., Nagy, T., & Csabai, M. (2014). The ef-fect of patient-
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
+
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 15.4pt, for example:
+(fancyhdr)                \setlength{\footskip}{15.4pt}.
+
+[4] (./tamasnagy_cv.aux)
+ ***********
+LaTeX2e <2023-06-01> patch level 1
+L3 programming layer <2023-08-29>
+ ***********
+Package rerunfilecheck Info: File `tamasnagy_cv.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+ )
+(\end occurred when \ifnum on line 31 was incomplete) 
+Here is how much of TeX's memory you used:
+ 23139 strings out of 476851
+ 432049 string characters out of 5805432
+ 1956801 words of memory out of 5000000
+ 44009 multiletter control sequences out of 15000+600000
+ 589196 words of font info for 52 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 117i,12n,121p,590b,781s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/Users/thoma/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/intel/clearsans/ClearSans-Italic.pfb><c:/Users/thoma/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/intel/clearsans/ClearSans-Regular.pfb><c:/Users/thoma/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/dejavu/DejaVuSansMono.pfb><c:/Users/thoma/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb>
+Output written on tamasnagy_cv.pdf (4 pages, 1182954 bytes).
+PDF statistics:
+ 137 PDF objects out of 1000 (max. 8388607)
+ 118 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 500000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+

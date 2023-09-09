@@ -51,7 +51,7 @@ social:
   link: http://orcid.org/0000-0001-5244-0356 
 - icon: cv
   icon_pack: ai
-  link: uploads/nagytamas_CV_EN.pdf
+  link: uploads/tamasnagy_cv.pdf
   
 
 status:
