@@ -2,7 +2,7 @@
 name: Tamás
 surname: Nagy
 position: "Assistant Professor"
-address: "Institute of Psychololgy, ELTE Eötvös Loránd University"
+address: "Institute of Psychololgy, Eötvös Loránd University"
 phone: +36 30 627 6313
 profilepic: "`r here::here('content/authors/admin/nt_cv_image.jpg')`"
 www: nagytamas.netlify.app
@@ -11,13 +11,14 @@ twitter: nagyt
 github: nthun
 linkedin: tamas-nagy-phd-549bbb42
 date: "`r format(Sys.time(), '%B %Y')`"
-aboutme: "Tamás Nagy is an assistant professor of psychology at ELTE Eötvös Loránd University, Budapest. He has been teaching advanced research methodology, data analysis and statistical inference, and R programming for psychology students. He leads the ELTE Stress and Emotions Lab, which uses experimental methods and psychophysiology to uncover how we perceive physiological arousal, and how it affects our emotions, cognition, and behavior."
+aboutme: "Tamás Nagy is an assistant professor of psychology at Eötvös Loránd University, Budapest. He has been teaching advanced research methodology, data analysis and statistical inference, and R programming for psychology students. He leads the ELTE Stress and Emotions Lab, which uses experimental methods and psychophysiology to uncover how we perceive physiological arousal, and how it affects our emotions, cognition, and behavior."
+geometry: "top=0.75cm,top=0.75cm"
 output: vitae::twentyseconds
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
-library(vitae)
+library(vitae)  
 library(tidyverse)
 library(lubridate)
 ```
@@ -26,29 +27,31 @@ library(lubridate)
 
 Nationality: Hungarian  
 Date of birth: 1st of July, 1981  
-Address: 1147, Budapest, Fűrész utca 73B 1/4
+Address: 1147, Budapest, Fűrész utca 73B 1/4  
 
 # Research interests
 
-- Stress and emotion physiology
-- Machine learning and computational science
+- The psychophysiology of human stress and emotions
+- Machine learning, artificial intelligence, and computational science
 - Improving psychological science
 
-# Workplaces
-
+# Academic and industry positions
 
 ```{r}
 tribble(
   ~ Position, ~Years, ~Institution, ~Where, ~Why, 
-  "Assistant professor", "2017-", "ELTE Eötvös Loránd University, Institute of Psychology", "Budapest, Hungary", c("Main activities: Teaching (research methodology, data analysis, programming), research", "Main achievements: Reforming the “Data analysis and statistical inference” course for Psychology undergraduates, Establishing the R programming training for graduate students, Creating a free online course for high school students called “The Science of Psychology”, Taking part in the training of international students, Overseeing the faculty’s talent management program, Winning and managing 2 research grants and 4 talent management grants, Running the Stress & Emotions Lab."),
+  "Assistant professor", "2017-", "Eötvös Loránd University, Institute of Psych.", "Budapest, Hungary", 
+  c("Main activities: Teaching, research, supervising graduate and undergraduate students, leading Ph.D. projects, overseeing the faculty’s talent management program, managing grants, leading the Stress & Emotions Lab", 
+    "Main achievements: reforming the 'Data Analysis and Statistical Inference' course for psychology undergraduates, establishing the R programming training for graduate students, creating a free online course for high school students called 'The Science of Psychology', winning and managing two research grants and four talent management grants, successfully increasing the number of students in the talent management program, open science"),
 
-  "Lead researcher", "2014-2017", "Synetiq Ltd.", "Budapest, Hungary", c("Main activities: Designing, managing, and analyzing neuromarkerting research projects at a  startup", "Main achievements: Creating the research protocol involving psychophysiological methods and surveys. Leading successful research projects for large media and retail companies including HBO, AXN, RTL, BBC, The Dutch National TV, Lidl, Tesco, etc. Managed a research team to conduct media studies."), 
+  "Lead researcher", "2014-2017", "Synetiq Ltd.", "Budapest, Hungary", 
+  c("Main activities: Designing, managing, and analyzing neuromarkerting research projects at a startup company", 
+    "Main achievements: Creating the research protocol involving psychophysiological methods and surveys. Leading successful research projects for large media and retail companies including HBO, AXN, RTL, BBC, The Dutch National TV, Lidl, Tesco, etc. Managed a research team to conduct media studies."), 
 
-  "Research trainee", "2012 – 2013", "The University of Amsterdam", "Amsterdam, The Netherlands", "Main activities: Writing a manuscript on the effect of the acute stress response on alpha-amylase and cardiovascular indicators. PI: Dr. Jos Bosch", 
-
+  "Research trainee", "2012–2013", "The University of Amsterdam", "Amsterdam, The Netherlands", "Main activities: Writing a manuscript on the effect of the acute stress response on alpha-amylase and cardiovascular indicators. PI: Dr. Jos Bosch", 
   "Research assistant", "2008-2010", "Hungarian Academy of Sciences", "Budapest, Hungary", "Main activities: Analyzing and planning of quantitative studies, preparing manuscripts in the Comparative Cross-cultural Psychology Lab", 
 
-  "Counseling psychologist", "2006-2008", "Budapest University of Technology and Economics", "Budapest, Hungary", "Main activities: Psychological counseling for students, conducting psychological measurements"
+  "Counseling psychologist", "2006-2008", "Budapest University of Tech. and Econ.", "Budapest, Hungary", "Main activities: Psychological counseling for students, conducting psychological measurements"
 
 )  |> 
   detailed_entries(Position, Years, Institution, Where, Why)
@@ -60,8 +63,9 @@ tribble(
 ```{r}
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where,
-  "Ph.D. in Psychology", "2010-2015", "ELTE Eötvös Loránd University", "Budapest, Hungary",
-  "M.A. in Psychology", "2001-2006", "ELTE Eötvös Loránd University", "Budapest, Hungary"
+  "Postdoctoral fellow", "2019-2023", "Eötvös Loránd University", "Budapest, Hungary",
+  "Ph.D. studies in Psychology", "2010-2015", "Eötvös Loránd University", "Budapest, Hungary",
+  "M.A. studies in Psychology", "2001-2006", "Eötvös Loránd University", "Budapest, Hungary"
 )  |> 
   detailed_entries(Degree, Year, Institution, Where, .protect = TRUE)
 ```
@@ -73,7 +77,7 @@ tribble(
 ```{r}
 tribble(
     ~ Year, ~ Position, 
-    "2023-", "Member of the Institutional Research Ethics Committee",
+    "2023-", "Member of the Institutional Research Ethics Board",
     "2022-", "Head of the Stress & Emotions Research Group",
     "2019-2021", "Acting head of the Social Interventions Research Group",
     "2019-", "Member of the Research Transparency Committee",
@@ -86,35 +90,51 @@ tribble(
 
 # Grants
 
+
 ```{r}
 tribble(
     ~ Year, ~ Grant, ~ Details,
-    "2018, 2019, 2021, 2022", "National Talent Program", 
-    c("Amount: HUF 3.2/2.8/1.4/3.4M", "Description: Short (1 year) grants to fund the faculty talent management program"),
+    "2018-2022", "National Talent Program", 
+    c("Amount: HUF 10.4M", "Description: Short (1 year) grants to fund the faculty talent management program"),
     
-    "2019-2023", "Postdoctoral
-    grant", c("Amount: HUF 25.5M", "Description: National Scientific Basic Research Programs - Research grant to study the role of emotional arousal in media-induced stress recovery"),
+    "2019-2023", "Postdoctoral grant", 
+    c("Amount: HUF 25.5M", "Description: National Scientific Basic Research Programs - Research grant to study the role of emotional arousal in media-induced stress recovery"),
     
-    "2018-2021", "Young researcher grant", c("Amount: HUF 28.5M", "Description: National Scientific Basic Research Programs - Research grant to study the effects of intelligence mindset and mindfulness meditation on performance")
-
-) |> 
+    "2018-2021", "Young researcher grant", 
+    c("Amount: HUF 28.5M", "Description: National Scientific Basic Research Programs - Research grant to study the effects of intelligence mindset and mindfulness meditation on performance")
+    ) |> 
     detailed_entries(what = Grant, when = Year, why = Details)
 
 ```
 
 # Awards and honors
 
+
 ```{r}
 tribble(
     ~ Year, ~ Grant, ~ Details,
-    "2020", "ELTE's Promising Researcher special award for open Science", "For outstanding achievements in the field of open science",
+    "2021", "ELTE Online course development award", "For creating e-learning material for 'Data analysis and Statistical Inference' course.",
+    
+    "2020", "ELTE's Promising Researcher Special Award for Open Science", "For outstanding achievements in the field of open science",
+    
     "2018", "Erasmus+ research and training mobility", "Participation in a Bayesian statistics workshop in Amsterdam",
-    "2016", "Special prize at the Brain and Vision hackathon", "For integrating EEG systems into mobile, PC, and web applications",
+    
+    "2016", "Special prize at the Brain and Vision Hackathon", "For integrating EEG systems into mobile, PC, and web applications",
+    
     "2012-2013", "Erasmus+ traineeship", "University of Amsterdam, Netherlands",
+    
     "2010-2014", "Hungarian state scholarship", "To pursue doctoral studies at ELTE"
     ) |> 
     detailed_entries(what = Grant, when = Year, why = Details)
 ```
+
+# Teaching experience 
+
+- Data analysis and statistical inference lecture (B.A., Hungarian)
+- Multivariate statistics lecture (M.A., Hungarian and English)
+- Statistical programming and data analysis in R seminar M.A. and Ph.D, English)
+- Advanced research methodology in clinical and health psychology seminar (M.A., English)
+- Advanced data analysis methods in R seminar (M.A., Hungarian and English)
 
 # Workshops held
 ```{r}
@@ -123,46 +143,56 @@ tribble(
     ~ Year, ~ Title, ~With, ~ Details,
     "2022", "Regression Summer School 22", "University of Vienna", "Regression summer course jointly held of the students of ELTE and University of Vienna, https://osf.io/em5k4/",
     
-    "2022", "Vienna power analyis in R workshop", "University of Vienna", "Workshop about simulation based power analysis in R, https://osf.io/2tp3y/",
+    "2022", "Vienna Power Analyis in R Workshop", "University of Vienna", "Workshop about simulation based power analysis in R, https://osf.io/2tp3y/",
 
-    "2022", "Introduction to R and the tidyverse", "University of Vienna", "Two day introduction to R, https://osf.io/mx3vw/",
+    "2022", "Introduction to R and the Tidyverse", "University of Vienna", "Two day introduction to R, https://osf.io/mx3vw/",
     
-    "2022", "Meta-analysis workshop", "Semmelweiss University", "Workshop about the theory and practice of meta-analysis (Hungarian), https://osf.io/ug8cz/",
+    "2022", "Meta-analysis Workshop", "Semmelweiss University", "Workshop about the theory and practice of meta-analysis (Hungarian), https://osf.io/ug8cz/",
     
-    "2021", "Open science workshop", "ELTE Eötvös Loránd University", "Workshop about open science practices (Hungarian), https://osf.io/fz3pb/",
+    "2021", "Open Science Workshop", "Eötvös Loránd University", "Workshop about open science practices (Hungarian), https://osf.io/fz3pb/",
     
-    "2020", "Open science workshop", "ELTE Eötvös Loránd University", "Workshop about open science practices (Hungarian), https://osf.io/swntk/",
+    "2020", "Open Science Workshop", "Eötvös Loránd University", "Workshop about open science practices (Hungarian), https://osf.io/swntk/",
 
 ) |> 
     detailed_entries(what = Title, when = Year, with = With, why = Details)
 ```
 
-
-# Teaching experience 
-
-- Data analysis and statistical inference
-- Multivariate statistics
-- Statistical programming and data analysis in R
-- Advanced research methodology in clinical and health psychology
-- Advanced data analysis methods in R
-
-# Languages
+# Languages  
 
 - English (professional level)
 - Hungarian (native language)
 - German (limited professional level)
 - Japanese (basic level)
 
-# Journal positions and activity
+# Programming languages and data science tools  
 
+- R: developer level
+- git, markdown: professional level
+- SQL, python, Matlab, latex: basic level (I can use them but prefer R and other tools whenever possible)
+- SPSS, JASP, JAMOVI: professional level (I can teach these, and tutor others, but I don't use them myself)
+
+# Journal positions and activity  
+
+- Ad hoc peer review activity in multiple journals: https://www.webofscience.com/wos/author/record/J-5969-2019
 - Associate editor at Hungarian Psychology Review (Magyar Pszichológiai Szemle) 
-- Peer-review activity: https://www.webofscience.com/wos/author/record/J-5969-2019
 
-# Preprints and manuscripts under review
+# Society memberships
+
+- Hungarian Psychological Society
+- Society for the Improvement of Psychological Science
+- Member of the public body of Hungarian Academy of Sciences
+- Member of the Psychological Science Accelerator
+
+# Working papers and manuscripts under review
+
+Hajdú, N., Szászi, B., Aczél, B., & Nagy, T. (Under review). Using supervised machine learning methods in psychological research. _Magyar Pszichológiai Szemle_. 
+
+Nagy, T., Hergert, J., Rubínová, E., Tyson, G., Wallrich, L., Elsherif, M., Skvortsova, A., Payne, J., Alarie, S., Wang, Y. A., Graves, K., Schmidt, K., Sotola, L., Waltzer, T., Gjoneska, B., Seetahul, Y., Yang, Y.-F., Scharfenberg, D., & Moreau, D. (Under review). The Questionable Research Practice Bestiary. _Advances in Methods and Practices in Psychological Science_. 
+
+Nagy, T., Ipacs, H., Ferentzi, E., & Köteles, F. (Under review). Heart rate perception and expectation impact laboratory-induced perceived stress. _Biological Psychology_.
 
 
-
-# Publications
+# Peer reviewed journal articles and book chapters
 
 ```{r}
 

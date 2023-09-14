@@ -12,7 +12,7 @@ sections:
       folders:
       - project
     title: Projects
-    text: "The following quick projects are not directly connected to my research, but were fun to create and also taught me some cool new stuff like animated graphs, custom maps, and nifty statistical methods. Some of these projects sprouted from live coding sessions I hosted in my 'Statistical Programming / Data Analysis in R' course at ELTE. Another few came from professional collaborations like replication projects. "
+    text: "The following small projects are not directly connected to my research, but were fun to create and also taught me some cool new stuff like animated graphs, custom maps, and nifty statistical methods. Some of these projects sprouted from live coding sessions I hosted in my 'Statistical Programming / Data Analysis in R' course at ELTE. Another few came from professional collaborations like replication projects. "
   id: projects
 - block: portfolio
   content:
