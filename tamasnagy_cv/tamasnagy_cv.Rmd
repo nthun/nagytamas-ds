@@ -23,12 +23,6 @@ library(tidyverse)
 library(lubridate)
 ```
 
-# Personal information  
-
-Nationality: Hungarian  
-Date of birth: 1st of July, 1981  
-Address: 1147, Budapest, Fűrész utca 73B 1/4  
-
 # Research interests
 
 - The psychophysiology of human stress and emotions
@@ -173,7 +167,7 @@ tribble(
 
 # Journal positions and activity  
 
-- Ad hoc peer review activity in multiple journals: https://www.webofscience.com/wos/author/record/J-5969-2019
+- Ad hoc peer review activity at multiple journals: https://www.webofscience.com/wos/author/record/J-5969-2019
 - Associate editor at Hungarian Psychology Review (Magyar Pszichológiai Szemle) 
 
 # Society memberships
