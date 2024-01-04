@@ -5,12 +5,20 @@
     <link>https://nagytamas.netlify.app/tag/methods/</link>
       <atom:link href="https://nagytamas.netlify.app/tag/methods/index.xml" rel="self" type="application/rss+xml" />
     <description>methods</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 14 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 24 Nov 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://nagytamas.netlify.app/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>methods</title>
       <link>https://nagytamas.netlify.app/tag/methods/</link>
     </image>
+    
+    <item>
+      <title>How can large language models help us understand how the human mind works? (HUN)</title>
+      <link>https://nagytamas.netlify.app/workshop/2023-11-24-ai-mta/</link>
+      <pubDate>Fri, 24 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://nagytamas.netlify.app/workshop/2023-11-24-ai-mta/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Regression Summer School 22</title>

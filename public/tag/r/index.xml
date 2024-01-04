@@ -5,12 +5,20 @@
     <link>https://nagytamas.netlify.app/tag/r/</link>
       <atom:link href="https://nagytamas.netlify.app/tag/r/index.xml" rel="self" type="application/rss+xml" />
     <description>R</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 29 Nov 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://nagytamas.netlify.app/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>R</title>
       <link>https://nagytamas.netlify.app/tag/r/</link>
     </image>
+    
+    <item>
+      <title>Exploration of Hungarian Crime statistics</title>
+      <link>https://nagytamas.netlify.app/project/2023-11-29-hungarian_crime/</link>
+      <pubDate>Wed, 29 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://nagytamas.netlify.app/project/2023-11-29-hungarian_crime/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>London Marathon data exploration</title>

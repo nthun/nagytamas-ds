@@ -27,7 +27,7 @@ sections:
     filters:
       folders:
       - workshop
-    title: Workshops
+    title: Workshops and talks
     text: "I regularly hold workshops for researchers about advanced research methodology and R programming.  Please do not hesitate to contact me if you want to invite me to hold a workshop!"
   design:
     columns: "1"

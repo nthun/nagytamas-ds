@@ -5,12 +5,20 @@
     <link>https://nagytamas.netlify.app/tag/statistics/</link>
       <atom:link href="https://nagytamas.netlify.app/tag/statistics/index.xml" rel="self" type="application/rss+xml" />
     <description>statistics</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 09 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 29 Nov 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://nagytamas.netlify.app/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>statistics</title>
       <link>https://nagytamas.netlify.app/tag/statistics/</link>
     </image>
+    
+    <item>
+      <title>Exploration of Hungarian Crime statistics</title>
+      <link>https://nagytamas.netlify.app/project/2023-11-29-hungarian_crime/</link>
+      <pubDate>Wed, 29 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://nagytamas.netlify.app/project/2023-11-29-hungarian_crime/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Multi100 reanalysis of &#39;Childlessness and Psychological Well-Being in Context: A Multilevel Study on 24 European Countries&#39;</title>
